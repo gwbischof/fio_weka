@@ -1,0 +1,21 @@
+# report bandwidth iops latency
+[detector-write]
+description='detector write workload'
+ioengine=posixaio
+iodepth=1
+create_on_open=1
+unlink=1
+blocksize=1m
+filesize=5m-15m
+nrfiles=1000
+startdelay=1
+time_based=1
+runtime=120
+numjobs=64
+group_reporting=1
+direct=1
+ramp_time=5
+#rw=randwrite
+openfiles=1
+file_service_type=sequential
+rw=write

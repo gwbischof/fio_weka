@@ -1,0 +1,25 @@
+# report bandwidth iops 
+[fio-kdb-00]
+description='read bandwidth workload'
+readwrite=randread
+blocksize=256ki
+iodepth=32
+iodepth_batch=16
+iodepth_batch_complete=16
+numjobs=90
+time_based=1
+#runtime=120
+runtime=10
+ramp_time=5
+group_reporting=1
+norandommap=1
+randrepeat=0
+ioengine=posixaio
+nrfiles=100
+filesize=9m-11m
+openfiles=10
+file_service_type=normal
+create_serialize=0
+direct=1
+filename_format=$jobname/$jobnum/$filenum
+gtod_reduce=1
