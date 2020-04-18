@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/python
+##!/usr/bin/env python
 
 import json
 import decimal
@@ -151,9 +152,13 @@ def run_tests(hostips):
         announce( "starting fio --server on hosts:" )
         for host, s in host_session.items():
             announce( host )
-            s.run( "pkill fio", retcode=None )
-            s.run( "rm -f /tmp/fio.pid", retcode=None )
-            s.run( args.directory + "/fio --server --daemonize=/tmp/fio.pid --directory=" + args.directory )
+            # screw it, just manually started for now with
+            # start:  cat ../privateips | xargs -ri ssh {} '/mnt/testfs/fio --server --daemonize=/tmp/fio.pid -directory=/mnt/testfs/'
+            # check:  cat ../privateips |xargs -ri ssh {}  "ps -ef|grep /fio|grep -v grep && echo {}; ls /tmp/fio.pid 2>/dev/null"
+            # stop:  cat ../privateips |xargs -ri ssh {} "pkill fio; rm -f /tmp/fio.pid"
+            #s.run( "pkill fio", retcode=None )
+            #s.run( "rm -f /tmp/fio.pid", retcode=None )
+            #s.run( args.directory + "/fio --server --daemonize=/tmp/fio.pid --directory=" + args.directory )
 
         print
         time.sleep( 5 )
@@ -271,7 +276,7 @@ def run_tests(hostips):
 
         for host, s in host_session.items():
             announce( host )
-            s.run( "pkill fio" )
+            #s.run( "pkill fio", retcode=None )
 
         run_shell_command( 'rm ' + args.directory + '/fio' )
 
