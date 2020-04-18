@@ -1,0 +1,5 @@
+weka added an 8th node around or before the beginning of the test, but
+it had some issues during the test and is currently down, trying a second
+run with a consitent set of 7 servers...
+
+-matt
