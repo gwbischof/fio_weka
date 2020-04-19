@@ -2,10 +2,11 @@
 
 # I've defined 6 diff "det" sizes
 # for each client we'll randomly assign one...
-sleeptime=120
+#sleeptime=120
+sleeptime=60
 #sleeptime=2
 i=1
-for ip in $(cat privateips); do
+for ip in $(cat privateips) $(cat privateips); do
     jobs=($(sed -nr '/^\[([0-9].*-(detector|hdf5))-prelayout\].*$/{s||\1|p}' fio-jobfiles/026-detector_prelayout.job))
     rnd=$((RANDOM % 6))
     job=${jobs[$rnd]}
