@@ -1,0 +1,14 @@
+hostname=ip-172-31-61-142, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-61-142> 7m-detector-write-split: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-61-142> 7m-detector-prelayout: (g=0): rw=read, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-61-142> ...
+<ip-172-31-61-142> Starting 5 processes
+<ip-172-31-61-142> 7m-detector-write-split: Laying out IO files (5000 files / total 35000MiB)
+<ip-172-31-61-142> 7m-detector-prelayout: Laying out IO files (4998 files / total 34986MiB)
+<ip-172-31-61-142> 7m-detector-prelayout: you need to specify size=
+<ip-172-31-61-142> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
+<ip-172-31-61-142> 7m-detector-prelayout: you need to specify size=
+<ip-172-31-61-142> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
+<ip-172-31-61-142> 7m-detector-prelayout: you need to specify size=
+<ip-172-31-61-142> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
+Jobs: 1 (f=0): [P(1),/(1),X(3)][-.-%][eta 00m:00s]Jobs: 1 (f=0): [P(1),/(1),X(3)][-.-%][eta 00m:00s]

@@ -11,9 +11,8 @@ for ip in $(cat privateips) $(cat privateips); do
     rnd=$((RANDOM % 6))
     job=${jobs[$rnd]}
 
-    echo "### ($i) starting ${ip}_${job} #############################################"
-    date
-    ((./fio/fio --client=${ip} fio-jobfiles/025-${job}_read_write.job; echo "### ($i) done ${ip}_${job} #############################################") 2>&1 | tee manual_run/${ip}_${job}.log ) &
+    echo "### ($i) starting ${ip}_${job} ###### $(date) ###"
+    ((./fio/fio --client=${ip} fio-jobfiles/025-${job}_read_write.job; echo -n "### ($i) done ${ip}_${job} ###### "; date | tr -d '\n'; echo " ###") 2>&1 | tee manual_run/manual_${i}_${ip}_${job}.log ) &
 
     i=$(($i + 1))
     sleep $sleeptime

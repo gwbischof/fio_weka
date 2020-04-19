@@ -1,0 +1,11 @@
+hostname=ip-172-31-57-17, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-57-17> 4g-detector-write-split: (g=0): rw=write, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-57-17> 4g-detector-prelayout: (g=0): rw=read, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-57-17> ...
+<ip-172-31-57-17> Starting 5 processes
+<ip-172-31-57-17> 4g-detector-prelayout: you need to specify size=
+<ip-172-31-57-17> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
+<ip-172-31-57-17> 4g-detector-prelayout: you need to specify size=
+<ip-172-31-57-17> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
+<ip-172-31-57-17> 4g-detector-prelayout: you need to specify size=
+<ip-172-31-57-17> fio: pid=0, err=22/file:filesetup.c:1057, func=total_file_size, error=Invalid argument
