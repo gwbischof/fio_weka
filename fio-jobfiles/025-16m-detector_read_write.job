@@ -26,4 +26,5 @@ numjobs=4
 group_reporting=1
 ramp_time=5
 rw=read
+openfiles=10
 loops=2
