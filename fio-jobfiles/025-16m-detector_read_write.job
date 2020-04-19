@@ -15,7 +15,7 @@ group_reporting=1
 ramp_time=5
 rw=write
 openfiles=1
-loops=1000
+loops=2
 
 [16m-detector-prelayout]
 description='detector read, separate workloads, w/ prelayout'
@@ -26,4 +26,4 @@ numjobs=4
 group_reporting=1
 ramp_time=5
 rw=read
-loops=1000
+loops=2
