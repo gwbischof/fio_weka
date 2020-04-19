@@ -1,0 +1,29 @@
+# report bandwidth iops latency
+
+[global]
+ioengine=posixaio
+iodepth=4
+blocksize=1m
+filename_format=$jobname/00/$filenum
+
+[7m-detector-write-split]
+description='detector write, separate workloads'
+filesize=7m
+nrfiles=5000
+startdelay=1s-5m
+group_reporting=1
+ramp_time=5
+rw=write
+openfiles=1
+loops=1000
+
+[7m-detector-prelayout]
+description='detector read, separate workloads, w/ prelayout'
+filesize=7m
+nrfiles=5000
+startdelay=1s-5m
+numjobs=4
+group_reporting=1
+ramp_time=5
+rw=read
+loops=1000

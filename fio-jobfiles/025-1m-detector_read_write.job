@@ -4,39 +4,26 @@
 ioengine=posixaio
 iodepth=4
 blocksize=1m
-#openfiles=1000
-create_only=1
-rw=read
 filename_format=$jobname/00/$filenum
 
-[detector-write-split]
+[1m-detector-write-split]
 description='detector write, separate workloads'
-blocksize=4m
-#filesize=1m-10g
-filesize=3.75m
+filesize=1m
 nrfiles=5000
 startdelay=1s-5m
-#time_based=1
-#runtime=120
-#numjobs=64
 group_reporting=1
-#direct=1
 ramp_time=5
 rw=write
 openfiles=1
-loops=10
+loops=1000
 
-[detector-read-split]
-description='detector read, separate workloads'
-ioengine=posixaio
-iodepth=4
-blocksize=4m
-filesize=3.75m
+[1m-detector-prelayout]
+description='detector read, separate workloads, w/ prelayout'
+filesize=1m
 nrfiles=5000
 startdelay=1s-5m
 numjobs=4
 group_reporting=1
 ramp_time=5
 rw=read
-openfiles=1
-loops=10
+loops=1000
