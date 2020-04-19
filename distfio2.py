@@ -89,10 +89,19 @@ def run_shell_command( command ):
 # parse arguments
 progname=sys.argv[0]
 parser = argparse.ArgumentParser(description='Run fio benchmark on a groups of servers')
+
 parser.add_argument('servers', metavar='servername', type=str, nargs='+', help='Servers to execute on')
+
 parser.add_argument('-d', '--directory', type=str, help='shared directory to use for test files - default is current dir', default=os.getcwd())
 
+default_jobs = "./fio-jobfiles/020*"
+parser.add_argument('-j', '--jobs', type=str, nargs='+', help='fio jobfiles to run, default is: '+default_jobs, default=glob.glob(default_jobs))
+
+parser.add_argument('-r', '--range', type=str, nargs='?', help='range of clients to loop through, eg "2,27", default: "2,27", if -r specified with no value: "2,3"', default="2,27", const="2,3")
+
 args = parser.parse_args()
+#print args
+#sys.exit(0)
 
 cpu_attrs = {}
 lscpu_out = run_shell_command( 'lscpu' )
@@ -164,7 +173,7 @@ def run_tests(hostips):
         time.sleep( 5 )
 
         # get a list of script files
-        fio_scripts = [f for f in glob.glob( "./fio-jobfiles/020*")]
+        fio_scripts = [f for f in args.jobs]
         fio_scripts.sort()
 
         print "setup complete."
@@ -182,6 +191,8 @@ def run_tests(hostips):
                 for lineno, line in enumerate( jobfile ):
                     line.strip()
                     linelist = line.split()
+                    if(len(linelist) == 0):
+                        continue  # skip blank lines
                     if linelist[0][0] == "#":         # first char is '#'
                         if linelist[0] == "#report":
                             linelist.pop(0) # get rid of the "#report"
@@ -284,6 +295,12 @@ def run_tests(hostips):
 
 
 
-for i in range(2,27):
+# specify range on command line... eg. "-r 2,27"
+(n,m)=map(int, args.range.split(','))
+if n<2 or n>26 or m<3 or m>27 or n>=m:
+    print 'bad range "'+n+','+m+'", must match n=[2,26],m=[3,27],n<m'
+    sys.exit(-1)
+
+for i in range(n,m):
     run_tests(hostips[0:i])
 
