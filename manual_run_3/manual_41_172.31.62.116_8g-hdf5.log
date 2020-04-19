@@ -1,0 +1,11 @@
+hostname=ip-172-31-62-116, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-62-116> 8g-detector-write-split: (g=0): rw=write, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-62-116> 8g-detector-prelayout: (g=0): rw=read, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-62-116> ...
+<ip-172-31-62-116> Starting 4 processes
+<ip-172-31-62-116> 8g-detector-write-split: Laying out IO files (20 files / total 163840MiB)
+<ip-172-31-62-116> 8g-detector-prelayout: Laying out IO files (20 files / total 163840MiB)
+<ip-172-31-62-116> 
+
+Run status group 0 (all jobs):
+### (41) done 172.31.62.116_8g-hdf5 ###### Sun Apr 19 22:58:51 UTC 2020 ###

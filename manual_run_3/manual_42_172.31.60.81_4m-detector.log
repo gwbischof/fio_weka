@@ -1,0 +1,11 @@
+hostname=ip-172-31-60-81, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-60-81> 4m-detector-write-split: (g=0): rw=write, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-60-81> 4m-detector-prelayout: (g=0): rw=read, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-60-81> ...
+<ip-172-31-60-81> Starting 4 processes
+<ip-172-31-60-81> 4m-detector-write-split: Laying out IO files (5000 files / total 20000MiB)
+<ip-172-31-60-81> 4m-detector-prelayout: Laying out IO files (4998 files / total 19992MiB)
+<ip-172-31-60-81> 
+
+Run status group 0 (all jobs):
+### (42) done 172.31.60.81_4m-detector ###### Sun Apr 19 22:59:06 UTC 2020 ###

@@ -1,0 +1,6 @@
+hostname=ip-172-31-51-36, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-51-36> 16m-detector-write-split: (g=0): rw=write, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-51-36> 16m-detector-prelayout: (g=0): rw=read, bs=(R) 4096KiB-4096KiB, (W) 4096KiB-4096KiB, (T) 4096KiB-4096KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-51-36> ...
+<ip-172-31-51-36> Starting 4 processes
+Jobs: 1 (f=0): [P(1),/(1),P(2)][-.-%][eta 00m:00s]Jobs: 1 (f=0): [P(1),/(1),P(2)][-.-%][eta 00m:00s]Jobs: 1 (f=0): [P(1),/(1),P(2)][-.-%][eta 00m:00s]Jobs: 1 (f=0): [P(1),/(1),P(2)][-.-%][eta 00m:00s]Jobs: 1 (f=0): [P(1),/(1),P(2)][-.-%][eta 00m:00s]Jobs: 1 (f=10): [P(1),R(1),P(2)][0.5%][r=19.2M][r=4 IOPS][eta 02h:04m:59s]Jobs: 1 (f=10): [P(1),R(1),P(2)][0.7%][r=1273M][r=310 IOPS][eta 01h:24m:53s]

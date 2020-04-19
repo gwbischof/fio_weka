@@ -22,9 +22,11 @@ description='detector read, separate workloads, w/ prelayout'
 filesize=8g
 nrfiles=20
 startdelay=1s-5m
-numjobs=4
+numjobs=3
 group_reporting=1
 ramp_time=5
 rw=read
 openfiles=10
 loops=60
+# needed for numjobs>1
+size=160g
