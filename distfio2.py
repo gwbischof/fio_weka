@@ -159,7 +159,7 @@ def run_tests(hostips):
         time.sleep( 5 )
 
         # get a list of script files
-        fio_scripts = [f for f in glob.glob( "./fio-jobfiles/020*")]
+        fio_scripts = [f for f in glob.glob( "./fio-jobfiles/0*")]
         fio_scripts.sort()
 
         print "setup complete."
