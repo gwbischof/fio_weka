@@ -1,0 +1,1050 @@
+2 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 
+starting fio --server on hosts: 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 2 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.J_zEs2.json
+{'total_read_bandwidth': '2.12 GiB', 'avg_read_bandwidth': '1.06 GiB', 'total_bandwidth': '2.12 GiB', 'avg_bandwidth': '1.06 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '8,177', 'avg write iops': '-1', 'total read iops': '8,177', 'avg read iops': '2,724', 'avg iops': '2,724'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.SO4EXm.json
+{'total_read_bandwidth': '2.67 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '5.34 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '2.67 GiB'}
+{'total write iops': '2,732', 'total iops': '5,469', 'avg write iops': '909', 'total read iops': '2,737', 'avg read iops': '911', 'avg iops': '1,822'}
+{'write latency': '28.84 ms', 'read latency': '36.91 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.eeFLM5.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '2.76 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '2.76 GiB'}
+{'total write iops': '2,829', 'total iops': '2,829', 'avg write iops': '942', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '942'}
+{'write latency': '45.20 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.BbuRcI.json
+{'total_read_bandwidth': '1.00 GiB', 'avg_read_bandwidth': '513.46 MiB', 'total_bandwidth': '1.00 GiB', 'avg_bandwidth': '513.46 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '262,822', 'avg write iops': '-1', 'total read iops': '262,822', 'avg read iops': '87,606', 'avg iops': '87,606'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.D74cb1.json
+{'write latency': '0 nanosecs', 'read latency': '200.77 us'}
+
+Tests complete.
+172.31.50.13 172.31.49.110 
+3 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 
+starting fio --server on hosts: 172.31.53.141 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 3 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.glQnYn.json
+{'total_read_bandwidth': '3.21 GiB', 'avg_read_bandwidth': '1.07 GiB', 'total_bandwidth': '3.21 GiB', 'avg_bandwidth': '1.07 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '12,414', 'avg write iops': '-1', 'total read iops': '12,414', 'avg read iops': '3,102', 'avg iops': '3,102'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.iGMj2L.json
+{'total_read_bandwidth': '4.01 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '8.01 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '4.00 GiB'}
+{'total write iops': '4,098', 'total iops': '8,205', 'avg write iops': '1,023', 'total read iops': '4,107', 'avg read iops': '1,025', 'avg iops': '2,050'}
+{'write latency': '29.76 ms', 'read latency': '35.98 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.Nd1J4c.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '4.14 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '4.14 GiB'}
+{'total write iops': '4,243', 'total iops': '4,243', 'avg write iops': '1,059', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,059'}
+{'write latency': '45.22 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.InZWAy.json
+{'total_read_bandwidth': '1.49 GiB', 'avg_read_bandwidth': '509.38 MiB', 'total_bandwidth': '1.49 GiB', 'avg_bandwidth': '509.38 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '391,101', 'avg write iops': '-1', 'total read iops': '391,101', 'avg read iops': '97,774', 'avg iops': '97,774'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.teI_Pg.json
+{'write latency': '0 nanosecs', 'read latency': '201.83 us'}
+
+Tests complete.
+172.31.53.141 172.31.50.13 172.31.49.110 
+4 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 
+starting fio --server on hosts: 172.31.53.141 172.31.50.13 172.31.49.110 172.31.59.12 
+setup complete.
+
+Starting tests on 4 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.PJveJD.json
+{'total_read_bandwidth': '4.42 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '4.42 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '17,119', 'avg write iops': '-1', 'total read iops': '17,119', 'avg read iops': '3,422', 'avg iops': '3,422'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.dEojet.json
+{'total_read_bandwidth': '5.35 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '10.69 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '5.34 GiB'}
+{'total write iops': '5,466', 'total iops': '10,948', 'avg write iops': '1,092', 'total read iops': '5,481', 'avg read iops': '1,095', 'avg iops': '2,188'}
+{'write latency': '30.14 ms', 'read latency': '35.58 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.bieI9F.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '5.53 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '5.53 GiB'}
+{'total write iops': '5,658', 'total iops': '5,658', 'avg write iops': '1,130', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,130'}
+{'write latency': '45.22 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.V7x4Cd.json
+{'total_read_bandwidth': '1.99 GiB', 'avg_read_bandwidth': '508.95 MiB', 'total_bandwidth': '1.99 GiB', 'avg_bandwidth': '508.95 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '521,029', 'avg write iops': '-1', 'total read iops': '521,029', 'avg read iops': '104,204', 'avg iops': '104,204'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.saPT_0.json
+{'write latency': '0 nanosecs', 'read latency': '201.46 us'}
+
+Tests complete.
+172.31.53.141 172.31.50.13 172.31.49.110 172.31.59.12 
+5 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 
+starting fio --server on hosts: 172.31.53.141 172.31.61.152 172.31.50.13 172.31.49.110 172.31.59.12 
+setup complete.
+
+Starting tests on 5 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.AUf7Zk.json
+{'total_read_bandwidth': '5.48 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '5.48 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '21,208', 'avg write iops': '-1', 'total read iops': '21,208', 'avg read iops': '3,533', 'avg iops': '3,533'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.8Av7Ps.json
+{'total_read_bandwidth': '6.68 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '13.36 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '6.67 GiB'}
+{'total write iops': '6,833', 'total iops': '13,676', 'avg write iops': '1,137', 'total read iops': '6,842', 'avg read iops': '1,139', 'avg iops': '2,278'}
+{'write latency': '31.16 ms', 'read latency': '34.63 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.5XKfef.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '6.91 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '6.91 GiB'}
+{'total write iops': '7,073', 'total iops': '7,073', 'avg write iops': '1,177', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,177'}
+{'write latency': '45.22 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.bYonJD.json
+{'total_read_bandwidth': '2.47 GiB', 'avg_read_bandwidth': '505.68 MiB', 'total_bandwidth': '2.47 GiB', 'avg_bandwidth': '505.68 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '647,099', 'avg write iops': '-1', 'total read iops': '647,099', 'avg read iops': '107,848', 'avg iops': '107,848'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.fiEeca.json
+{'write latency': '0 nanosecs', 'read latency': '200.52 us'}
+
+Tests complete.
+172.31.53.141 172.31.61.152 172.31.50.13 172.31.49.110 172.31.59.12 
+6 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 
+starting fio --server on hosts: 172.31.59.12 172.31.53.141 172.31.61.152 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 6 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.ngeJWA.json
+{'total_read_bandwidth': '6.54 GiB', 'avg_read_bandwidth': '1.09 GiB', 'total_bandwidth': '6.54 GiB', 'avg_bandwidth': '1.09 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '25,304', 'avg write iops': '-1', 'total read iops': '25,304', 'avg read iops': '3,613', 'avg iops': '3,613'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.y99RcW.json
+{'total_read_bandwidth': '8.03 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '16.04 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '8.01 GiB'}
+{'total write iops': '8,200', 'total iops': '16,419', 'avg write iops': '1,170', 'total read iops': '8,219', 'avg read iops': '1,173', 'avg iops': '2,344'}
+{'write latency': '30.36 ms', 'read latency': '35.37 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.mqFzkm.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '8.22 GiB', 'avg_bandwidth': '1.37 GiB', 'avg_write_bandwidth': '1.37 GiB', 'total_write_bandwidth': '8.22 GiB'}
+{'total write iops': '8,420', 'total iops': '8,420', 'avg write iops': '1,201', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,201'}
+{'write latency': '45.58 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.uERfjo.json
+{'total_read_bandwidth': '2.96 GiB', 'avg_read_bandwidth': '505.92 MiB', 'total_bandwidth': '2.96 GiB', 'avg_bandwidth': '505.92 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '776,888', 'avg write iops': '-1', 'total read iops': '776,888', 'avg read iops': '110,983', 'avg iops': '110,983'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.KTSNWG.json
+{'write latency': '0 nanosecs', 'read latency': '201.26 us'}
+
+Tests complete.
+172.31.59.12 172.31.53.141 172.31.61.152 172.31.63.12 172.31.50.13 172.31.49.110 
+7 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 
+starting fio --server on hosts: 172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 7 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.0vdM2N.json
+{'total_read_bandwidth': '7.66 GiB', 'avg_read_bandwidth': '1.09 GiB', 'total_bandwidth': '7.66 GiB', 'avg_bandwidth': '1.09 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '29,645', 'avg write iops': '-1', 'total read iops': '29,645', 'avg read iops': '3,704', 'avg iops': '3,704'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.LHgPs9.json
+{'total_read_bandwidth': '9.36 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '18.70 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '9.34 GiB'}
+{'total write iops': '9,567', 'total iops': '19,149', 'avg write iops': '1,194', 'total read iops': '9,582', 'avg read iops': '1,196', 'avg iops': '2,392'}
+{'write latency': '31.46 ms', 'read latency': '34.27 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.pufSgk.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '9.67 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '9.67 GiB'}
+{'total write iops': '9,901', 'total iops': '9,901', 'avg write iops': '1,236', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,236'}
+{'write latency': '45.23 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.1w_8wV.json
+{'total_read_bandwidth': '3.46 GiB', 'avg_read_bandwidth': '506.40 MiB', 'total_bandwidth': '3.46 GiB', 'avg_bandwidth': '506.40 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '907,239', 'avg write iops': '-1', 'total read iops': '907,239', 'avg read iops': '113,403', 'avg iops': '113,403'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.oARj7x.json
+{'write latency': '0 nanosecs', 'read latency': '201.14 us'}
+
+Tests complete.
+172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+8 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 
+starting fio --server on hosts: 172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 8 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.dN0tp1.json
+{'total_read_bandwidth': '8.66 GiB', 'avg_read_bandwidth': '1.08 GiB', 'total_bandwidth': '8.66 GiB', 'avg_bandwidth': '1.08 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '33,497', 'avg write iops': '-1', 'total read iops': '33,497', 'avg read iops': '3,720', 'avg iops': '3,720'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.ntIZKC.json
+{'total_read_bandwidth': '10.69 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '21.36 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '10.67 GiB'}
+{'total write iops': '10,924', 'total iops': '21,873', 'avg write iops': '1,212', 'total read iops': '10,948', 'avg read iops': '1,215', 'avg iops': '2,429'}
+{'write latency': '31.46 ms', 'read latency': '34.31 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.jzc5by.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '11.05 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '11.05 GiB'}
+{'total write iops': '11,315', 'total iops': '11,315', 'avg write iops': '1,256', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,256'}
+{'write latency': '45.22 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.fn4542.json
+{'total_read_bandwidth': '3.95 GiB', 'avg_read_bandwidth': '505.43 MiB', 'total_bandwidth': '3.95 GiB', 'avg_bandwidth': '505.43 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,034,860', 'avg write iops': '-1', 'total read iops': '1,034,860', 'avg read iops': '114,983', 'avg iops': '114,983'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.ErSJnY.json
+{'write latency': '0 nanosecs', 'read latency': '201.44 us'}
+
+Tests complete.
+172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+9 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 9 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.8ciXZI.json
+{'total_read_bandwidth': '9.85 GiB', 'avg_read_bandwidth': '1.09 GiB', 'total_bandwidth': '9.85 GiB', 'avg_bandwidth': '1.09 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '38,155', 'avg write iops': '-1', 'total read iops': '38,155', 'avg read iops': '3,814', 'avg iops': '3,814'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.mMCkv7.json
+{'total_read_bandwidth': '12.03 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '24.04 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '12.01 GiB'}
+{'total write iops': '12,297', 'total iops': '24,619', 'avg write iops': '1,228', 'total read iops': '12,322', 'avg read iops': '1,231', 'avg iops': '2,460'}
+{'write latency': '31.84 ms', 'read latency': '33.92 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.Dejmdb.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '12.39 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '12.39 GiB'}
+{'total write iops': '12,692', 'total iops': '12,692', 'avg write iops': '1,268', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,268'}
+{'write latency': '45.36 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.L3ge0o.json
+{'total_read_bandwidth': '4.42 GiB', 'avg_read_bandwidth': '502.99 MiB', 'total_bandwidth': '4.42 GiB', 'avg_bandwidth': '502.99 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,158,576', 'avg write iops': '-1', 'total read iops': '1,158,576', 'avg read iops': '115,856', 'avg iops': '115,856'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.yVCDVO.json
+{'write latency': '0 nanosecs', 'read latency': '202.24 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+10 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 10 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.V95REo.json
+{'total_read_bandwidth': '10.96 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '10.96 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '42,454', 'avg write iops': '-1', 'total read iops': '42,454', 'avg read iops': '3,858', 'avg iops': '3,858'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.5GXLUm.json
+{'total_read_bandwidth': '13.37 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '26.73 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.34 GiB', 'total_write_bandwidth': '13.35 GiB'}
+{'total write iops': '13,674', 'total iops': '27,369', 'avg write iops': '1,242', 'total read iops': '13,694', 'avg read iops': '1,243', 'avg iops': '2,487'}
+{'write latency': '31.12 ms', 'read latency': '34.59 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.eNcV2z.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '13.75 GiB', 'avg_bandwidth': '1.37 GiB', 'avg_write_bandwidth': '1.37 GiB', 'total_write_bandwidth': '13.75 GiB'}
+{'total write iops': '14,075', 'total iops': '14,075', 'avg write iops': '1,278', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,278'}
+{'write latency': '45.69 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.NGhSPT.json
+{'total_read_bandwidth': '4.88 GiB', 'avg_read_bandwidth': '499.91 MiB', 'total_bandwidth': '4.88 GiB', 'avg_bandwidth': '499.91 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,279,427', 'avg write iops': '-1', 'total read iops': '1,279,427', 'avg read iops': '116,310', 'avg iops': '116,310'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.Uj43In.json
+{'write latency': '0 nanosecs', 'read latency': '202.79 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+11 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 11 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.O_KZqp.json
+{'total_read_bandwidth': '11.98 GiB', 'avg_read_bandwidth': '1.09 GiB', 'total_bandwidth': '11.98 GiB', 'avg_bandwidth': '1.09 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '46,389', 'avg write iops': '-1', 'total read iops': '46,389', 'avg read iops': '3,864', 'avg iops': '3,864'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.hXde6f.json
+{'total_read_bandwidth': '14.70 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '29.39 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '14.68 GiB'}
+{'total write iops': '15,036', 'total iops': '30,092', 'avg write iops': '1,252', 'total read iops': '15,055', 'avg read iops': '1,253', 'avg iops': '2,506'}
+{'write latency': '32.20 ms', 'read latency': '33.56 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.rCDMMB.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '15.20 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '1.38 GiB', 'total_write_bandwidth': '15.20 GiB'}
+{'total write iops': '15,559', 'total iops': '15,559', 'avg write iops': '1,295', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,295'}
+{'write latency': '45.22 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.JWMPb2.json
+{'total_read_bandwidth': '5.36 GiB', 'avg_read_bandwidth': '499.04 MiB', 'total_bandwidth': '5.36 GiB', 'avg_bandwidth': '499.04 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,404,929', 'avg write iops': '-1', 'total read iops': '1,404,929', 'avg read iops': '117,076', 'avg iops': '117,076'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.NpGPkg.json
+{'write latency': '0 nanosecs', 'read latency': '203.87 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+12 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 12 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.gopy8E.json
+{'total_read_bandwidth': '13.16 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '13.16 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '50,983', 'avg write iops': '-1', 'total read iops': '50,983', 'avg read iops': '3,920', 'avg iops': '3,920'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.HcaPwN.json
+{'total_read_bandwidth': '16.05 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '32.07 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.33 GiB', 'total_write_bandwidth': '16.02 GiB'}
+{'total write iops': '16,401', 'total iops': '32,839', 'avg write iops': '1,260', 'total read iops': '16,437', 'avg read iops': '1,263', 'avg iops': '2,525'}
+{'write latency': '31.73 ms', 'read latency': '34.02 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.oEwJj_.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '16.43 GiB', 'avg_bandwidth': '1.37 GiB', 'avg_write_bandwidth': '1.37 GiB', 'total_write_bandwidth': '16.43 GiB'}
+{'total write iops': '16,828', 'total iops': '16,828', 'avg write iops': '1,293', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,293'}
+{'write latency': '45.81 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.zMfY5W.json
+{'total_read_bandwidth': '5.82 GiB', 'avg_read_bandwidth': '496.22 MiB', 'total_bandwidth': '5.82 GiB', 'avg_bandwidth': '496.22 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,523,987', 'avg write iops': '-1', 'total read iops': '1,523,987', 'avg read iops': '117,228', 'avg iops': '117,228'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.RJBrTi.json
+{'write latency': '0 nanosecs', 'read latency': '203.99 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+13 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 13 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.3ZTOk5.json
+{'total_read_bandwidth': '14.27 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '14.27 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '55,261', 'avg write iops': '-1', 'total read iops': '55,261', 'avg read iops': '3,946', 'avg iops': '3,946'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.GEY6kU.json
+{'total_read_bandwidth': '17.38 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '34.75 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.34 GiB', 'total_write_bandwidth': '17.36 GiB'}
+{'total write iops': '17,779', 'total iops': '35,581', 'avg write iops': '1,268', 'total read iops': '17,801', 'avg read iops': '1,270', 'avg iops': '2,540'}
+{'write latency': '32.52 ms', 'read latency': '33.21 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.gm_ZkA.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '18.54 GiB', 'avg_bandwidth': '1.43 GiB', 'avg_write_bandwidth': '1.43 GiB', 'total_write_bandwidth': '18.54 GiB'}
+{'total write iops': '18,987', 'total iops': '18,987', 'avg write iops': '1,355', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,355'}
+{'write latency': '43.66 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.H7jnfY.json
+{'total_read_bandwidth': '6.30 GiB', 'avg_read_bandwidth': '496.48 MiB', 'total_bandwidth': '6.30 GiB', 'avg_bandwidth': '496.48 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,651,845', 'avg write iops': '-1', 'total read iops': '1,651,845', 'avg read iops': '117,987', 'avg iops': '117,987'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.Hb9LcF.json
+{'write latency': '0 nanosecs', 'read latency': '203.96 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.63.12 172.31.50.13 172.31.49.110 
+14 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 14 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.Fy1Ge2.json
+{'total_read_bandwidth': '15.29 GiB', 'avg_read_bandwidth': '1.09 GiB', 'total_bandwidth': '15.29 GiB', 'avg_bandwidth': '1.09 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '59,191', 'avg write iops': '-1', 'total read iops': '59,191', 'avg read iops': '3,945', 'avg iops': '3,945'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.j_E2Nv.json
+{'total_read_bandwidth': '18.72 GiB', 'avg_read_bandwidth': '1.34 GiB', 'total_bandwidth': '37.42 GiB', 'avg_bandwidth': '2.67 GiB', 'avg_write_bandwidth': '1.34 GiB', 'total_write_bandwidth': '18.69 GiB'}
+{'total write iops': '19,141', 'total iops': '38,314', 'avg write iops': '1,275', 'total read iops': '19,173', 'avg read iops': '1,277', 'avg iops': '2,553'}
+{'write latency': '32.48 ms', 'read latency': '33.26 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.gB7oip.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '19.23 GiB', 'avg_bandwidth': '1.37 GiB', 'avg_write_bandwidth': '1.37 GiB', 'total_write_bandwidth': '19.23 GiB'}
+{'total write iops': '19,692', 'total iops': '19,692', 'avg write iops': '1,311', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,311'}
+{'write latency': '45.39 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.yLlZxL.json
+{'total_read_bandwidth': '6.79 GiB', 'avg_read_bandwidth': '496.97 MiB', 'total_bandwidth': '6.79 GiB', 'avg_bandwidth': '496.97 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,780,686', 'avg write iops': '-1', 'total read iops': '1,780,686', 'avg read iops': '118,711', 'avg iops': '118,711'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.ZGsyAz.json
+{'write latency': '0 nanosecs', 'read latency': '204.31 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+15 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 
+starting fio --server on hosts: 172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 15 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.JQUlyf.json
+{'total_read_bandwidth': '16.26 GiB', 'avg_read_bandwidth': '1.08 GiB', 'total_bandwidth': '16.26 GiB', 'avg_bandwidth': '1.08 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '62,933', 'avg write iops': '-1', 'total read iops': '62,933', 'avg read iops': '3,932', 'avg iops': '3,932'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.sCmDFu.json
+{'total_read_bandwidth': '19.69 GiB', 'avg_read_bandwidth': '1.31 GiB', 'total_bandwidth': '39.34 GiB', 'avg_bandwidth': '2.62 GiB', 'avg_write_bandwidth': '1.31 GiB', 'total_write_bandwidth': '19.65 GiB'}
+{'total write iops': '20,122', 'total iops': '40,287', 'avg write iops': '1,256', 'total read iops': '20,165', 'avg read iops': '1,259', 'avg iops': '2,516'}
+{'write latency': '36.78 ms', 'read latency': '30.17 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.9TNNQq.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '20.47 GiB', 'avg_bandwidth': '1.36 GiB', 'avg_write_bandwidth': '1.36 GiB', 'total_write_bandwidth': '20.47 GiB'}
+{'total write iops': '20,959', 'total iops': '20,959', 'avg write iops': '1,308', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,308'}
+{'write latency': '45.78 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.ddSFvy.json
+{'total_read_bandwidth': '7.30 GiB', 'avg_read_bandwidth': '498.12 MiB', 'total_bandwidth': '7.30 GiB', 'avg_bandwidth': '498.12 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '1,912,272', 'avg write iops': '-1', 'total read iops': '1,912,272', 'avg read iops': '119,516', 'avg iops': '119,516'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.wfLEMd.json
+{'write latency': '0 nanosecs', 'read latency': '204.58 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+16 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 
+starting fio --server on hosts: 172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 16 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.X8LFR8.json
+{'total_read_bandwidth': '17.57 GiB', 'avg_read_bandwidth': '1.10 GiB', 'total_bandwidth': '17.57 GiB', 'avg_bandwidth': '1.10 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '68,087', 'avg write iops': '-1', 'total read iops': '68,087', 'avg read iops': '4,004', 'avg iops': '4,004'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.pFg89m.json
+{'total_read_bandwidth': '16.65 GiB', 'avg_read_bandwidth': '1.04 GiB', 'total_bandwidth': '33.28 GiB', 'avg_bandwidth': '2.08 GiB', 'avg_write_bandwidth': '1.04 GiB', 'total_write_bandwidth': '16.63 GiB'}
+{'total write iops': '17,027', 'total iops': '34,080', 'avg write iops': '1,000', 'total read iops': '17,053', 'avg read iops': '1,002', 'avg iops': '2,003'}
+{'write latency': '68.76 ms', 'read latency': '15.76 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.YGrGas.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '21.41 GiB', 'avg_bandwidth': '1.34 GiB', 'avg_write_bandwidth': '1.34 GiB', 'total_write_bandwidth': '21.41 GiB'}
+{'total write iops': '21,920', 'total iops': '21,920', 'avg write iops': '1,288', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,288'}
+{'write latency': '46.24 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.x6dG3M.json
+{'total_read_bandwidth': '7.78 GiB', 'avg_read_bandwidth': '497.91 MiB', 'total_bandwidth': '7.78 GiB', 'avg_bandwidth': '497.91 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,038,896', 'avg write iops': '-1', 'total read iops': '2,038,896', 'avg read iops': '119,934', 'avg iops': '119,934'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.2ZP33m.json
+{'write latency': '0 nanosecs', 'read latency': '205.41 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+17 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 
+starting fio --server on hosts: 172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 17 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.SILKVK.json
+{'total_read_bandwidth': '18.97 GiB', 'avg_read_bandwidth': '1.12 GiB', 'total_bandwidth': '18.97 GiB', 'avg_bandwidth': '1.12 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '73,582', 'avg write iops': '-1', 'total read iops': '73,582', 'avg read iops': '4,086', 'avg iops': '4,086'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.xPb42N.json
+{'total_read_bandwidth': '16.18 GiB', 'avg_read_bandwidth': '974.69 MiB', 'total_bandwidth': '32.34 GiB', 'avg_bandwidth': '1.90 GiB', 'avg_write_bandwidth': '973.40 MiB', 'total_write_bandwidth': '16.16 GiB'}
+{'total write iops': '16,547', 'total iops': '33,117', 'avg write iops': '918', 'total read iops': '16,569', 'avg read iops': '919', 'avg iops': '1,838'}
+{'write latency': '76.61 ms', 'read latency': '15.74 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.xh4XPX.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '25.90 GiB', 'avg_bandwidth': '1.52 GiB', 'avg_write_bandwidth': '1.52 GiB', 'total_write_bandwidth': '25.90 GiB'}
+{'total write iops': '26,518', 'total iops': '26,518', 'avg write iops': '1,472', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,472'}
+{'write latency': '40.94 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.dSoHwb.json
+{'total_read_bandwidth': '8.21 GiB', 'avg_read_bandwidth': '494.53 MiB', 'total_bandwidth': '8.21 GiB', 'avg_bandwidth': '494.53 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,151,635', 'avg write iops': '-1', 'total read iops': '2,151,635', 'avg read iops': '119,534', 'avg iops': '119,534'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.ZKCK8n.json
+{'write latency': '0 nanosecs', 'read latency': '206.35 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 
+18 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 
+starting fio --server on hosts: 172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+setup complete.
+
+Starting tests on 18 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.kPoGJ6.json
+{'total_read_bandwidth': '20.58 GiB', 'avg_read_bandwidth': '1.14 GiB', 'total_bandwidth': '20.58 GiB', 'avg_bandwidth': '1.14 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '79,896', 'avg write iops': '-1', 'total read iops': '79,896', 'avg read iops': '4,204', 'avg iops': '4,204'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.MImyQH.json
+{'total_read_bandwidth': '16.76 GiB', 'avg_read_bandwidth': '953.32 MiB', 'total_bandwidth': '33.48 GiB', 'avg_bandwidth': '1.86 GiB', 'avg_write_bandwidth': '951.47 MiB', 'total_write_bandwidth': '16.72 GiB'}
+{'total write iops': '17,126', 'total iops': '34,286', 'avg write iops': '900', 'total read iops': '17,159', 'avg read iops': '902', 'avg iops': '1,803'}
+{'write latency': '78.57 ms', 'read latency': '15.91 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.iGEUpX.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '28.55 GiB', 'avg_bandwidth': '1.59 GiB', 'avg_write_bandwidth': '1.59 GiB', 'total_write_bandwidth': '28.55 GiB'}
+{'total write iops': '29,239', 'total iops': '29,239', 'avg write iops': '1,537', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,537'}
+{'write latency': '37.74 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.hb7ahn.json
+{'total_read_bandwidth': '8.64 GiB', 'avg_read_bandwidth': '491.48 MiB', 'total_bandwidth': '8.64 GiB', 'avg_bandwidth': '491.48 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,264,133', 'avg write iops': '-1', 'total read iops': '2,264,133', 'avg read iops': '119,163', 'avg iops': '119,163'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.5nWvOT.json
+{'write latency': '0 nanosecs', 'read latency': '207.25 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+19 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 
+starting fio --server on hosts: 172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+setup complete.
+
+Starting tests on 19 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.hIPpVz.json
+{'total_read_bandwidth': '21.69 GiB', 'avg_read_bandwidth': '1.14 GiB', 'total_bandwidth': '21.69 GiB', 'avg_bandwidth': '1.14 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '84,219', 'avg write iops': '-1', 'total read iops': '84,219', 'avg read iops': '4,209', 'avg iops': '4,209'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.7Hzay4.json
+{'total_read_bandwidth': '15.97 GiB', 'avg_read_bandwidth': '860.56 MiB', 'total_bandwidth': '31.91 GiB', 'avg_bandwidth': '1.68 GiB', 'avg_write_bandwidth': '859.13 MiB', 'total_write_bandwidth': '15.94 GiB'}
+{'total write iops': '16,323', 'total iops': '32,674', 'avg write iops': '815', 'total read iops': '16,350', 'avg read iops': '816', 'avg iops': '1,632'}
+{'write latency': '87.29 ms', 'read latency': '17.14 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.3wFK80.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '26.66 GiB', 'avg_bandwidth': '1.40 GiB', 'avg_write_bandwidth': '1.40 GiB', 'total_write_bandwidth': '26.66 GiB'}
+{'total write iops': '27,295', 'total iops': '27,295', 'avg write iops': '1,363', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,363'}
+{'write latency': '42.93 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.UUwX4d.json
+{'total_read_bandwidth': '9.04 GiB', 'avg_read_bandwidth': '487.43 MiB', 'total_bandwidth': '9.04 GiB', 'avg_bandwidth': '487.43 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,370,239', 'avg write iops': '-1', 'total read iops': '2,370,239', 'avg read iops': '118,510', 'avg iops': '118,510'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.qIbnqn.json
+{'write latency': '0 nanosecs', 'read latency': '207.73 us'}
+
+Tests complete.
+172.31.59.132 172.31.60.81 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+20 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 
+starting fio --server on hosts: 172.31.59.132 172.31.51.36 172.31.60.81 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+setup complete.
+
+Starting tests on 20 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.dozSeU.json
+{'total_read_bandwidth': '23.11 GiB', 'avg_read_bandwidth': '1.16 GiB', 'total_bandwidth': '23.11 GiB', 'avg_bandwidth': '1.16 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '89,784', 'avg write iops': '-1', 'total read iops': '89,784', 'avg read iops': '4,274', 'avg iops': '4,274'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.izCEk0.json
+{'total_read_bandwidth': '16.30 GiB', 'avg_read_bandwidth': '834.35 MiB', 'total_bandwidth': '32.58 GiB', 'avg_bandwidth': '1.63 GiB', 'avg_write_bandwidth': '833.81 MiB', 'total_write_bandwidth': '16.29 GiB'}
+{'total write iops': '16,675', 'total iops': '33,363', 'avg write iops': '793', 'total read iops': '16,687', 'avg read iops': '793', 'avg iops': '1,587'}
+{'write latency': '90.67 ms', 'read latency': '16.73 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.Nc0_8e.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '28.91 GiB', 'avg_bandwidth': '1.45 GiB', 'avg_write_bandwidth': '1.45 GiB', 'total_write_bandwidth': '28.91 GiB'}
+{'total write iops': '29,607', 'total iops': '29,607', 'avg write iops': '1,408', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,408'}
+{'write latency': '43.15 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.rNgdfK.json
+{'total_read_bandwidth': '9.51 GiB', 'avg_read_bandwidth': '486.93 MiB', 'total_bandwidth': '9.51 GiB', 'avg_bandwidth': '486.93 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,492,419', 'avg write iops': '-1', 'total read iops': '2,492,419', 'avg read iops': '118,685', 'avg iops': '118,685'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.dV85b3.json
+{'write latency': '0 nanosecs', 'read latency': '208.06 us'}
+
+Tests complete.
+172.31.59.132 172.31.51.36 172.31.60.81 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+21 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 
+starting fio --server on hosts: 172.31.59.132 172.31.51.36 172.31.60.81 172.31.59.65 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+setup complete.
+
+Starting tests on 21 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.8Hp_Rh.json
+{'total_read_bandwidth': '24.67 GiB', 'avg_read_bandwidth': '1.17 GiB', 'total_bandwidth': '24.67 GiB', 'avg_bandwidth': '1.17 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '95,918', 'avg write iops': '-1', 'total read iops': '95,918', 'avg read iops': '4,358', 'avg iops': '4,358'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.Bl7Rpj.json
+{'total_read_bandwidth': '15.74 GiB', 'avg_read_bandwidth': '767.35 MiB', 'total_bandwidth': '31.49 GiB', 'avg_bandwidth': '1.50 GiB', 'avg_write_bandwidth': '768.00 MiB', 'total_write_bandwidth': '15.75 GiB'}
+{'total write iops': '16,127', 'total iops': '32,243', 'avg write iops': '732', 'total read iops': '16,115', 'avg read iops': '731', 'avg iops': '1,464'}
+{'write latency': '98.47 ms', 'read latency': '18.27 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.zenPG9.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '25.28 GiB', 'avg_bandwidth': '1.20 GiB', 'avg_write_bandwidth': '1.20 GiB', 'total_write_bandwidth': '25.28 GiB'}
+{'total write iops': '25,886', 'total iops': '25,886', 'avg write iops': '1,175', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,175'}
+{'write latency': '51.77 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.YD7ys2.json
+{'total_read_bandwidth': '9.94 GiB', 'avg_read_bandwidth': '484.89 MiB', 'total_bandwidth': '9.94 GiB', 'avg_bandwidth': '484.89 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,606,077', 'avg write iops': '-1', 'total read iops': '2,606,077', 'avg read iops': '118,457', 'avg iops': '118,457'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.IY9JPp.json
+{'write latency': '0 nanosecs', 'read latency': '208.94 us'}
+
+Tests complete.
+172.31.59.132 172.31.51.36 172.31.60.81 172.31.59.65 172.31.60.171 172.31.59.12 172.31.51.70 172.31.50.237 172.31.54.192 172.31.63.204 172.31.62.116 172.31.53.141 172.31.61.152 172.31.62.220 172.31.57.17 172.31.61.142 172.31.49.184 172.31.63.12 172.31.50.13 172.31.49.110 172.31.51.207 
+22 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 172.31.53.118 
+starting fio --server on hosts: 172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+setup complete.
+
+Starting tests on 22 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.mGW_Fd.json
+{'total_read_bandwidth': '25.77 GiB', 'avg_read_bandwidth': '1.17 GiB', 'total_bandwidth': '25.77 GiB', 'avg_bandwidth': '1.17 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '100,133', 'avg write iops': '-1', 'total read iops': '100,133', 'avg read iops': '4,352', 'avg iops': '4,352'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.09eLXt.json
+{'total_read_bandwidth': '17.10 GiB', 'avg_read_bandwidth': '795.71 MiB', 'total_bandwidth': '34.21 GiB', 'avg_bandwidth': '1.55 GiB', 'avg_write_bandwidth': '796.49 MiB', 'total_write_bandwidth': '17.11 GiB'}
+{'total write iops': '17,520', 'total iops': '35,033', 'avg write iops': '760', 'total read iops': '17,512', 'avg read iops': '760', 'avg iops': '1,522'}
+{'write latency': '95.09 ms', 'read latency': '17.38 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.8NlxUW.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '24.60 GiB', 'avg_bandwidth': '1.12 GiB', 'avg_write_bandwidth': '1.12 GiB', 'total_write_bandwidth': '24.60 GiB'}
+{'total write iops': '25,192', 'total iops': '25,192', 'avg write iops': '1,094', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,094'}
+{'write latency': '55.79 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.xdymMv.json
+{'total_read_bandwidth': '10.38 GiB', 'avg_read_bandwidth': '483.34 MiB', 'total_bandwidth': '10.38 GiB', 'avg_bandwidth': '483.34 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,721,405', 'avg write iops': '-1', 'total read iops': '2,721,405', 'avg read iops': '118,320', 'avg iops': '118,320'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.4oe5fJ.json
+{'write latency': '0 nanosecs', 'read latency': '209.80 us'}
+
+Tests complete.
+172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+23 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 172.31.53.118 172.31.58.72 
+starting fio --server on hosts: 172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+setup complete.
+
+Starting tests on 23 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.HcXhLl.json
+{'total_read_bandwidth': '26.77 GiB', 'avg_read_bandwidth': '1.16 GiB', 'total_bandwidth': '26.77 GiB', 'avg_bandwidth': '1.16 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '104,052', 'avg write iops': '-1', 'total read iops': '104,052', 'avg read iops': '4,334', 'avg iops': '4,334'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.Cr6ORK.json
+{'total_read_bandwidth': '15.85 GiB', 'avg_read_bandwidth': '705.48 MiB', 'total_bandwidth': '31.71 GiB', 'avg_bandwidth': '1.38 GiB', 'avg_write_bandwidth': '706.12 MiB', 'total_write_bandwidth': '15.86 GiB'}
+{'total write iops': '16,240', 'total iops': '32,468', 'avg write iops': '675', 'total read iops': '16,228', 'avg read iops': '675', 'avg iops': '1,351'}
+{'write latency': '107.95 ms', 'read latency': '19.10 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.13VV18.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '25.56 GiB', 'avg_bandwidth': '1.11 GiB', 'avg_write_bandwidth': '1.11 GiB', 'total_write_bandwidth': '25.56 GiB'}
+{'total write iops': '26,173', 'total iops': '26,173', 'avg write iops': '1,089', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,089'}
+{'write latency': '55.98 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.Omlk0y.json
+{'total_read_bandwidth': '10.86 GiB', 'avg_read_bandwidth': '483.43 MiB', 'total_bandwidth': '10.86 GiB', 'avg_bandwidth': '483.43 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,845,684', 'avg write iops': '-1', 'total read iops': '2,845,684', 'avg read iops': '118,569', 'avg iops': '118,569'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.hbb_FE.json
+{'write latency': '0 nanosecs', 'read latency': '209.95 us'}
+
+Tests complete.
+172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+24 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 172.31.53.118 172.31.58.72 172.31.54.96 
+starting fio --server on hosts: 172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+setup complete.
+
+Starting tests on 24 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.TBpxki.json
+{'total_read_bandwidth': '28.60 GiB', 'avg_read_bandwidth': '1.19 GiB', 'total_bandwidth': '28.60 GiB', 'avg_bandwidth': '1.19 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '111,255', 'avg write iops': '-1', 'total read iops': '111,255', 'avg read iops': '4,449', 'avg iops': '4,449'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.couAAD.json
+{'total_read_bandwidth': '15.83 GiB', 'avg_read_bandwidth': '675.36 MiB', 'total_bandwidth': '31.68 GiB', 'avg_bandwidth': '1.32 GiB', 'avg_write_bandwidth': '676.12 MiB', 'total_write_bandwidth': '15.85 GiB'}
+{'total write iops': '16,226', 'total iops': '32,436', 'avg write iops': '648', 'total read iops': '16,210', 'avg read iops': '647', 'avg iops': '1,296'}
+{'write latency': '113.92 ms', 'read latency': '18.76 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.CEz_VL.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '24.07 GiB', 'avg_bandwidth': '1.00 GiB', 'avg_write_bandwidth': '1.00 GiB', 'total_write_bandwidth': '24.07 GiB'}
+{'total write iops': '24,643', 'total iops': '24,643', 'avg write iops': '984', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '984'}
+{'write latency': '62.52 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.cSajsf.json
+{'total_read_bandwidth': '11.36 GiB', 'avg_read_bandwidth': '484.88 MiB', 'total_bandwidth': '11.36 GiB', 'avg_bandwidth': '484.88 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '2,978,278', 'avg write iops': '-1', 'total read iops': '2,978,278', 'avg read iops': '119,130', 'avg iops': '119,130'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.ffrZXn.json
+{'write latency': '0 nanosecs', 'read latency': '210.85 us'}
+
+Tests complete.
+172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+25 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 172.31.53.118 172.31.58.72 172.31.54.96 172.31.62.5 
+starting fio --server on hosts: 172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.62.5 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+setup complete.
+
+Starting tests on 25 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.g2VGX2.json
+{'total_read_bandwidth': '29.86 GiB', 'avg_read_bandwidth': '1.19 GiB', 'total_bandwidth': '29.86 GiB', 'avg_bandwidth': '1.19 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '116,160', 'avg write iops': '-1', 'total read iops': '116,160', 'avg read iops': '4,466', 'avg iops': '4,466'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.ugZ7Lx.json
+{'total_read_bandwidth': '15.65 GiB', 'avg_read_bandwidth': '640.84 MiB', 'total_bandwidth': '31.32 GiB', 'avg_bandwidth': '1.25 GiB', 'avg_write_bandwidth': '641.97 MiB', 'total_write_bandwidth': '15.67 GiB'}
+{'total write iops': '16,048', 'total iops': '32,072', 'avg write iops': '616', 'total read iops': '16,023', 'avg read iops': '615', 'avg iops': '1,232'}
+{'write latency': '120.82 ms', 'read latency': '19.09 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.4g_heM.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '24.25 GiB', 'avg_bandwidth': '993.38 MiB', 'avg_write_bandwidth': '993.38 MiB', 'total_write_bandwidth': '24.25 GiB'}
+{'total write iops': '24,834', 'total iops': '24,834', 'avg write iops': '954', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '954'}
+{'write latency': '64.45 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.DBS1Yo.json
+{'total_read_bandwidth': '11.82 GiB', 'avg_read_bandwidth': '484.06 MiB', 'total_bandwidth': '11.82 GiB', 'avg_bandwidth': '484.06 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '3,097,163', 'avg write iops': '-1', 'total read iops': '3,097,163', 'avg read iops': '119,120', 'avg iops': '119,120'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.SJ4PZb.json
+{'write latency': '0 nanosecs', 'read latency': '210.79 us'}
+
+Tests complete.
+172.31.59.65 172.31.60.171 172.31.54.192 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.62.5 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+26 hosts detected
+Working dir is /mnt/testfs/
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 172.31.61.152 172.31.63.12 172.31.61.142 172.31.60.171 172.31.59.132 172.31.62.220 172.31.63.204 172.31.54.192 172.31.50.237 172.31.49.184 172.31.62.116 172.31.60.81 172.31.57.17 172.31.51.207 172.31.51.70 172.31.51.36 172.31.59.65 172.31.53.118 172.31.58.72 172.31.54.96 172.31.62.5 172.31.58.200 
+starting fio --server on hosts: 172.31.59.65 172.31.60.171 172.31.54.192 172.31.58.200 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.62.5 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
+setup complete.
+
+Starting tests on 26 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/010-bandwidth.job
+Job is fio-kdb-00 'read bandwidth workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.POAcO8.json
+{'total_read_bandwidth': '30.98 GiB', 'avg_read_bandwidth': '1.19 GiB', 'total_bandwidth': '30.98 GiB', 'avg_bandwidth': '1.19 GiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '120,533', 'avg write iops': '-1', 'total read iops': '120,533', 'avg read iops': '4,463', 'avg iops': '4,463'}
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.3CbFiE.json
+{'total_read_bandwidth': '15.62 GiB', 'avg_read_bandwidth': '615.05 MiB', 'total_bandwidth': '31.27 GiB', 'avg_bandwidth': '1.20 GiB', 'avg_write_bandwidth': '616.35 MiB', 'total_write_bandwidth': '15.65 GiB'}
+{'total write iops': '16,024', 'total iops': '32,018', 'avg write iops': '592', 'total read iops': '15,994', 'avg read iops': '591', 'avg iops': '1,184'}
+{'write latency': '126.88 ms', 'read latency': '19.04 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-write.0nt0en.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '23.68 GiB', 'avg_bandwidth': '932.66 MiB', 'avg_write_bandwidth': '932.66 MiB', 'total_write_bandwidth': '23.68 GiB'}
+{'total write iops': '24,248', 'total iops': '24,248', 'avg write iops': '897', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '897'}
+{'write latency': '68.50 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /home/ec2-user/fio_weka/fio-kdb-00.rZ_fwB.json
+{'total_read_bandwidth': '12.35 GiB', 'avg_read_bandwidth': '486.44 MiB', 'total_bandwidth': '12.35 GiB', 'avg_bandwidth': '486.44 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '3,236,882', 'avg write iops': '-1', 'total read iops': '3,236,882', 'avg read iops': '119,883', 'avg iops': '119,883'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /home/ec2-user/fio_weka/fio-latency-00.UyohcL.json
+{'write latency': '0 nanosecs', 'read latency': '211.31 us'}
+
+Tests complete.
+172.31.59.65 172.31.60.171 172.31.54.192 172.31.58.200 172.31.63.12 172.31.50.13 172.31.49.110 172.31.62.220 172.31.51.207 172.31.54.96 172.31.61.142 172.31.62.116 172.31.49.184 172.31.51.70 172.31.58.72 172.31.59.12 172.31.53.118 172.31.51.36 172.31.62.5 172.31.59.132 172.31.60.81 172.31.63.204 172.31.53.141 172.31.61.152 172.31.57.17 172.31.50.237 
