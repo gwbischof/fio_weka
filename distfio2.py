@@ -279,5 +279,5 @@ def run_tests(hostips):
 
 
 
-for i in range(2,27):
+for i in range(2,15):
     run_tests(hostips[0:i])
