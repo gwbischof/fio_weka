@@ -1,0 +1,220 @@
+2 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 
+starting fio --server on hosts: 10.0.0.5 10.0.0.4 
+setup complete.
+
+Starting tests on 2 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.Ceyz0A.json
+{'total_read_bandwidth': '1.43 GiB', 'avg_read_bandwidth': '732.11 MiB', 'total_bandwidth': '2.86 GiB', 'avg_bandwidth': '1.43 GiB', 'avg_write_bandwidth': '731.81 MiB', 'total_write_bandwidth': '1.43 GiB'}
+{'total write iops': '1,463', 'total iops': '2,927', 'avg write iops': '486', 'total read iops': '1,464', 'avg read iops': '487', 'avg iops': '974'}
+{'write latency': '40.46 ms', 'read latency': '3.03 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.j0JNPI.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '3.87 GiB', 'avg_bandwidth': '1.93 GiB', 'avg_write_bandwidth': '1.93 GiB', 'total_write_bandwidth': '3.87 GiB'}
+{'total write iops': '3,958', 'total iops': '3,958', 'avg write iops': '1,318', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '1,318'}
+{'write latency': '16.30 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00.FaZxGz.json
+{'total_read_bandwidth': '381.01 MiB', 'avg_read_bandwidth': '190.51 MiB', 'total_bandwidth': '381.01 MiB', 'avg_bandwidth': '190.51 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '97,439', 'avg write iops': '-1', 'total read iops': '97,439', 'avg read iops': '32,478', 'avg iops': '32,478'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.WETOuV.json
+{'write latency': '0 nanosecs', 'read latency': '238.76 us'}
+
+Tests complete.
+10.0.0.5 10.0.0.4 
+4 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 
+starting fio --server on hosts: 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+setup complete.
+
+Starting tests on 4 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.K1DdYR.json
+{'total_read_bandwidth': '1.70 GiB', 'avg_read_bandwidth': '436.12 MiB', 'total_bandwidth': '3.42 GiB', 'avg_bandwidth': '874.87 MiB', 'avg_write_bandwidth': '438.76 MiB', 'total_write_bandwidth': '1.71 GiB'}
+{'total write iops': '1,755', 'total iops': '3,499', 'avg write iops': '350', 'total read iops': '1,744', 'avg read iops': '347', 'avg iops': '698'}
+{'write latency': '70.43 ms', 'read latency': '2.37 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.auxPrM.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '3.85 GiB', 'avg_bandwidth': '986.75 MiB', 'avg_write_bandwidth': '986.75 MiB', 'total_write_bandwidth': '3.85 GiB'}
+{'total write iops': '3,947', 'total iops': '3,947', 'avg write iops': '788', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '788'}
+{'write latency': '32.42 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00.opQmnr.json
+{'total_read_bandwidth': '398.43 MiB', 'avg_read_bandwidth': '99.61 MiB', 'total_bandwidth': '398.43 MiB', 'avg_bandwidth': '99.61 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '101,799', 'avg write iops': '-1', 'total read iops': '101,799', 'avg read iops': '20,358', 'avg iops': '20,358'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.A0JBg5.json
+{'write latency': '0 nanosecs', 'read latency': '437.65 us'}
+
+Tests complete.
+10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+6 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 10.0.0.8 10.0.0.10 
+starting fio --server on hosts: 10.0.0.10 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+setup complete.
+
+Starting tests on 6 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.x7cpcw.json
+{'total_read_bandwidth': '1.61 GiB', 'avg_read_bandwidth': '275.24 MiB', 'total_bandwidth': '3.24 GiB', 'avg_bandwidth': '553.65 MiB', 'avg_write_bandwidth': '278.41 MiB', 'total_write_bandwidth': '1.63 GiB'}
+{'total write iops': '1,670', 'total iops': '3,321', 'avg write iops': '237', 'total read iops': '1,651', 'avg read iops': '234', 'avg iops': '473'}
+{'write latency': '112.08 ms', 'read latency': '2.48 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.4jpPT3.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '3.84 GiB', 'avg_bandwidth': '654.92 MiB', 'avg_write_bandwidth': '654.92 MiB', 'total_write_bandwidth': '3.84 GiB'}
+{'total write iops': '3,929', 'total iops': '3,929', 'avg write iops': '560', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '560'}
+{'write latency': '48.86 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00.Aasz8W.json
+{'total_read_bandwidth': '841.92 MiB', 'avg_read_bandwidth': '140.32 MiB', 'total_bandwidth': '841.92 MiB', 'avg_bandwidth': '140.32 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '215,233', 'avg write iops': '-1', 'total read iops': '215,233', 'avg read iops': '30,746', 'avg iops': '30,746'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.0Fa0oK.json
+{'write latency': '0 nanosecs', 'read latency': '482.59 us'}
+
+Tests complete.
+10.0.0.10 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+7 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 10.0.0.8 10.0.0.10 10.0.0.11 
+starting fio --server on hosts: 10.0.0.11 10.0.0.10 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+setup complete.
+
+Starting tests on 7 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.UfraXG.json
+{'total_read_bandwidth': '1.32 GiB', 'avg_read_bandwidth': '192.56 MiB', 'total_bandwidth': '2.64 GiB', 'avg_bandwidth': '386.48 MiB', 'avg_write_bandwidth': '193.92 MiB', 'total_write_bandwidth': '1.33 GiB'}
+{'total write iops': '1,357', 'total iops': '2,705', 'avg write iops': '168', 'total read iops': '1,347', 'avg read iops': '167', 'avg iops': '337'}
+{'write latency': '161.14 ms', 'read latency': '3.30 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.6ZA7lY.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '3.14 GiB', 'avg_bandwidth': '459.02 MiB', 'avg_write_bandwidth': '459.02 MiB', 'total_write_bandwidth': '3.14 GiB'}
+{'total write iops': '3,213', 'total iops': '3,213', 'avg write iops': '400', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '400'}
+{'write latency': '69.58 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00._xtEAj.json
+{'total_read_bandwidth': '298.06 MiB', 'avg_read_bandwidth': '42.58 MiB', 'total_bandwidth': '298.06 MiB', 'avg_bandwidth': '42.58 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '75,965', 'avg write iops': '-1', 'total read iops': '75,965', 'avg read iops': '9,494', 'avg iops': '9,494'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.HbBALV.json
+{'write latency': '0 nanosecs', 'read latency': '506.32 us'}
+
+Tests complete.
+10.0.0.11 10.0.0.10 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+8 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 10.0.0.8 10.0.0.10 10.0.0.11 10.0.0.12 
+starting fio --server on hosts: 10.0.0.11 10.0.0.10 10.0.0.12 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+setup complete.
+
+Starting tests on 8 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.03aAe4.json
+{'total_read_bandwidth': '1.30 GiB', 'avg_read_bandwidth': '166.24 MiB', 'total_bandwidth': '2.60 GiB', 'avg_bandwidth': '332.41 MiB', 'avg_write_bandwidth': '166.17 MiB', 'total_write_bandwidth': '1.30 GiB'}
+{'total write iops': '1,329', 'total iops': '2,659', 'avg write iops': '146', 'total read iops': '1,329', 'avg read iops': '146', 'avg iops': '294'}
+{'write latency': '188.43 ms', 'read latency': '3.38 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.uplawh.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '2.61 GiB', 'avg_bandwidth': '334.48 MiB', 'avg_write_bandwidth': '334.48 MiB', 'total_write_bandwidth': '2.61 GiB'}
+{'total write iops': '2,675', 'total iops': '2,675', 'avg write iops': '296', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '296'}
+{'write latency': '95.54 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00.gLvweP.json
+{'total_read_bandwidth': '843.24 MiB', 'avg_read_bandwidth': '105.40 MiB', 'total_bandwidth': '843.24 MiB', 'avg_bandwidth': '105.40 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '215,471', 'avg write iops': '-1', 'total read iops': '215,471', 'avg read iops': '23,940', 'avg iops': '23,940'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.0ti8xy.json
+{'write latency': '0 nanosecs', 'read latency': '488.18 us'}
+
+Tests complete.
+10.0.0.11 10.0.0.10 10.0.0.12 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+9 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 10.0.0.8 10.0.0.10 10.0.0.11 10.0.0.12 10.0.0.19 
+starting fio --server on hosts: 10.0.0.11 10.0.0.10 10.0.0.12 10.0.0.19 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+setup complete.
+
+Starting tests on 9 hosts
+On 72 cores of Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-readwrite.8OGfEc.json
+{'total_read_bandwidth': '1.33 GiB', 'avg_read_bandwidth': '150.81 MiB', 'total_bandwidth': '2.64 GiB', 'avg_bandwidth': '300.57 MiB', 'avg_write_bandwidth': '149.76 MiB', 'total_write_bandwidth': '1.32 GiB'}
+{'total write iops': '1,347', 'total iops': '2,705', 'avg write iops': '133', 'total read iops': '1,357', 'avg read iops': '134', 'avg iops': '269'}
+{'write latency': '209.36 ms', 'read latency': '3.25 ms'}
+
+starting fio script ./fio-jobfiles/030-detector_write.job
+Job is detector-write 'detector write workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/detector-write.Ogb1rr.json
+{'total_read_bandwidth': '0 bytes', 'avg_read_bandwidth': '0 bytes', 'total_bandwidth': '1.95 GiB', 'avg_bandwidth': '222.17 MiB', 'avg_write_bandwidth': '222.17 MiB', 'total_write_bandwidth': '1.95 GiB'}
+{'total write iops': '1,999', 'total iops': '1,999', 'avg write iops': '198', 'total read iops': '0', 'avg read iops': '-1', 'avg iops': '198'}
+{'write latency': '143.64 ms', 'read latency': '0 nanosecs'}
+
+starting fio script ./fio-jobfiles/040-iops.job
+Job is fio-kdb-00 'read iops workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-kdb-00.ugWEHw.json
+{'total_read_bandwidth': '233.91 MiB', 'avg_read_bandwidth': '25.99 MiB', 'total_bandwidth': '233.91 MiB', 'avg_bandwidth': '25.99 MiB', 'avg_write_bandwidth': '0 bytes', 'total_write_bandwidth': '0 bytes'}
+{'total write iops': '0', 'total iops': '59,436', 'avg write iops': '-1', 'total read iops': '59,436', 'avg read iops': '5,942', 'avg iops': '5,942'}
+
+starting fio script ./fio-jobfiles/050-latency.job
+Job is fio-latency-00 'minumum latency workload'
+JSON output is in /nfs/gbischof/dama/fio_weka/fio-latency-00.77_2ey.json
+{'write latency': '0 nanosecs', 'read latency': '489.20 us'}
+
+Tests complete.
+10.0.0.11 10.0.0.10 10.0.0.12 10.0.0.19 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
+10 hosts detected
+Working dir is /nsls2/bm/fiotest-ssd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 10.0.0.6 10.0.0.7 10.0.0.8 10.0.0.10 10.0.0.11 10.0.0.12 10.0.0.19 10.0.0.20 
+starting fio --server on hosts: 10.0.0.11 10.0.0.10 10.0.0.12 10.0.0.19 10.0.0.8 10.0.0.5 10.0.0.4 10.0.0.7 10.0.0.6 
