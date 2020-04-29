@@ -1,0 +1,7 @@
+hostname=ip-172-31-59-132, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.19-44-g8dbd-dirty, flags=1
+<ip-172-31-59-132> 7m-detector-write-split: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-59-132> 7m-detector-prelayout: (g=0): rw=read, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=posixaio, iodepth=4
+<ip-172-31-59-132> ...
+<ip-172-31-59-132> Starting 4 processes
+<ip-172-31-59-132> 7m-detector-write-split: Laying out IO files (5000 files / total 35000MiB)
+<ip-172-31-59-132> 7m-detector-prelayout: Laying out IO files (4998 files / total 34986MiB)

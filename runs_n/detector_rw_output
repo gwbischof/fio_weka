@@ -1,0 +1,40 @@
+2 hosts detected
+Working dir is /mnt/testfs
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 
+starting fio --server on hosts: 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 2 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.mvpCR9.json
+{'total_read_bandwidth': '2.65 GiB', 'avg_read_bandwidth': '1.33 GiB', 'total_bandwidth': '5.30 GiB', 'avg_bandwidth': '2.65 GiB', 'avg_write_bandwidth': '1.32 GiB', 'total_write_bandwidth': '2.65 GiB'}
+{'total write iops': '2,712', 'total iops': '5,429', 'avg write iops': '903', 'total read iops': '2,716', 'avg read iops': '904', 'avg iops': '1,808'}
+{'write latency': '22.73 ms', 'read latency': '24.32 ms'}
+
+Tests complete.
+172.31.50.13 172.31.49.110 
+3 hosts detected
+Working dir is /mnt/testfs
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 
+starting fio --server on hosts: 172.31.53.141 172.31.50.13 172.31.49.110 
+setup complete.
+
+Starting tests on 3 hosts
+On 36 cores of Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz per host
+
+starting fio script ./fio-jobfiles/020-detector_read_write.job
+Job is detector-readwrite 'detector read/write workload'
+JSON output is in /home/ec2-user/fio_weka/detector-readwrite.wmQAV3.json
+{'total_read_bandwidth': '3.97 GiB', 'avg_read_bandwidth': '1.32 GiB', 'total_bandwidth': '7.93 GiB', 'avg_bandwidth': '2.64 GiB', 'avg_write_bandwidth': '1.32 GiB', 'total_write_bandwidth': '3.96 GiB'}
+{'total write iops': '4,056', 'total iops': '8,123', 'avg write iops': '1,013', 'total read iops': '4,066', 'avg read iops': '1,015', 'avg iops': '2,029'}
+{'write latency': '23.36 ms', 'read latency': '23.94 ms'}
+
+Tests complete.
+172.31.53.141 172.31.50.13 172.31.49.110 
+4 hosts detected
+Working dir is /mnt/testfs
+Opening ssh session to hosts: 172.31.50.13 172.31.49.110 172.31.53.141 172.31.59.12 
+starting fio --server on hosts: 172.31.53.141 172.31.50.13 172.31.49.110 

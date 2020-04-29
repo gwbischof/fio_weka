@@ -1,0 +1,4 @@
+2 hosts detected
+Working dir is /nsls2/bm/fiotest-nossd
+Opening ssh session to hosts: 10.0.0.4 10.0.0.5 
+starting fio --server on hosts: 10.0.0.5 10.0.0.4 
