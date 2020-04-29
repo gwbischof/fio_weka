@@ -1,5 +1,4 @@
-#!/usr/bin/python
-##!/usr/bin/env python
+#!/usr/bin/env python
 
 import json
 import decimal
@@ -89,19 +88,10 @@ def run_shell_command( command ):
 # parse arguments
 progname=sys.argv[0]
 parser = argparse.ArgumentParser(description='Run fio benchmark on a groups of servers')
-
 parser.add_argument('servers', metavar='servername', type=str, nargs='+', help='Servers to execute on')
-
 parser.add_argument('-d', '--directory', type=str, help='shared directory to use for test files - default is current dir', default=os.getcwd())
 
-default_jobs = "./fio-jobfiles/020*"
-parser.add_argument('-j', '--jobs', type=str, nargs='+', help='fio jobfiles to run, default is: '+default_jobs, default=glob.glob(default_jobs))
-
-parser.add_argument('-r', '--range', type=str, nargs='?', help='range of clients to loop through, eg "2,27", default: "2,27", if -r specified with no value: "2,3"', default="2,27", const="2,3")
-
 args = parser.parse_args()
-#print args
-#sys.exit(0)
 
 cpu_attrs = {}
 lscpu_out = run_shell_command( 'lscpu' )
@@ -161,19 +151,15 @@ def run_tests(hostips):
         announce( "starting fio --server on hosts:" )
         for host, s in host_session.items():
             announce( host )
-            # screw it, just manually started for now with
-            # start:  cat ../privateips | xargs -ri ssh {} '/mnt/testfs/fio --server --daemonize=/tmp/fio.pid -directory=/mnt/testfs/'
-            # check:  cat ../privateips |xargs -ri ssh {}  "ps -ef|grep /fio|grep -v grep && echo {}; ls /tmp/fio.pid 2>/dev/null"
-            # stop:  cat ../privateips |xargs -ri ssh {} "pkill fio; rm -f /tmp/fio.pid"
-            #s.run( "pkill fio", retcode=None )
-            #s.run( "rm -f /tmp/fio.pid", retcode=None )
-            #s.run( args.directory + "/fio --server --daemonize=/tmp/fio.pid --directory=" + args.directory )
+            s.run( "pkill fio", retcode=None )
+            s.run( "rm -f /tmp/fio.pid", retcode=None )
+            s.run( args.directory + "/fio --server --daemonize=/tmp/fio.pid --directory=" + args.directory )
 
         print
         time.sleep( 5 )
 
         # get a list of script files
-        fio_scripts = [f for f in args.jobs]
+        fio_scripts = [f for f in glob.glob( "./fio-jobfiles/0*")]
         fio_scripts.sort()
 
         print "setup complete."
@@ -191,8 +177,6 @@ def run_tests(hostips):
                 for lineno, line in enumerate( jobfile ):
                     line.strip()
                     linelist = line.split()
-                    if(len(linelist) == 0):
-                        continue  # skip blank lines
                     if linelist[0][0] == "#":         # first char is '#'
                         if linelist[0] == "#report":
                             linelist.pop(0) # get rid of the "#report"
@@ -287,7 +271,7 @@ def run_tests(hostips):
 
         for host, s in host_session.items():
             announce( host )
-            #s.run( "pkill fio", retcode=None )
+            s.run( "pkill fio" )
 
         run_shell_command( 'rm ' + args.directory + '/fio' )
 
@@ -295,12 +279,5 @@ def run_tests(hostips):
 
 
 
-# specify range on command line... eg. "-r 2,27"
-(n,m)=map(int, args.range.split(','))
-if n<2 or n>26 or m<3 or m>27 or n>=m:
-    print 'bad range "'+n+','+m+'", must match n=[2,26],m=[3,27],n<m'
-    sys.exit(-1)
-
-for i in range(n,m):
+for i in [9,10,11,12,13,14,15]:
     run_tests(hostips[0:i])
-
